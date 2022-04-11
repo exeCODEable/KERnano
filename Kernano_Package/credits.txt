@@ -1,0 +1,33 @@
+=======
+KERnano
+=======
+Developed & Maintained by: Ash Noor (ryn0f1sh).
+www.KERnano.com  | www.AshNoor.com  | www.exeCODEable.com
+
+
+-------------------------------
+I would like to give thanks to:
+-------------------------------
+-My family, for their love and support.
+-Syntax & Luna, for your encouragement and feedback.
+-Vernson, for inspiring "The URL Checker".
+-Cat, for your support and evangelism, I appreciate you.
+-Project Discovery, for being an inspiration for this project.
+
+
+
+-------------------------------
+I would like to give credit to:
+-------------------------------
+-Python: For providing the world and I with this superpower.
+-All the modules and libraries that made this project possible.
+-David Bomble: Who's generous code was the catalyst for the "NMap" feature.
+
+
+
+-----------------------------------
+A special thank you to my sponsors:
+-----------------------------------
+Thank you all so very much.
+
+

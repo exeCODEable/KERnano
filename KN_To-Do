@@ -1,51 +1,11 @@
-================================
-Branches: Win / Lin / Beta Tools
-================================
-
------------------
-Win / Lin / Beta
------------------
-+ Update PyCharm to see all the branches.
+=======================
+| Branches: Win / Lin |
+========================
 
 
-==+==+==+==+==+==+==+==+==+==+==
-
-
-
-
----------------
-WIN DEV BRANCH:
----------------
-
-
-==+==+==+==+==+==+==+==+==+==+==
-
-
-
-
-
-
-
----------------
-LIN DEV BRANCH:
----------------
-
-
-
-==+==+==+==+==+==+==+==+==+==+==
-
-
-
-
-
-
-
-
-
------------
-BETA TOOLS:
------------
-
-
-
-==+==+==+==+==+==+==+==+==+==+==
+############################
+WN DEV BRANCH:
+Date: April/11/2022
++ Added the Wordlister files.
++ Setting up the PyCharm enviroment.
++ Running some quick tests to make sure that things are connecting properly.
