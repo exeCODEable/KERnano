@@ -14,17 +14,12 @@
 # www.exeCODEable.com  |  www.AshNoor.me  |  www.KERnano.com            #
 #-----------------------------------------------------------------------#
 
-# The Imports
+# IMPORTS
 from time import sleep
 
-# Kernano Package:
-# To get the "Title" & "Kernano Menu"
-# The call : Kernano_Package.Kernano.title() / .kernano_menu()
-# This is to prevent a "Circular Import" error.
-import Kernano_Package.kp_main
-import Kernano_Package
-
-
+# Kernano Package
+#import Kernano_Package.kp_main
+from Kernano_Package.kp_main import title, kernano_menu
 
 
 
@@ -32,12 +27,12 @@ import Kernano_Package
 # Main Guard to call the function.
 if __name__ == '__main__':
     # Call in the Title function.
-    Kernano_Package.kp_main.title()
+    #Kernano_Package.kp_main.title()
+    title()
 
-    # Sleep for a 2 seconds
+    # Sleep for 2 seconds
     sleep(3)
 
     # Call in the Main Menu function.
-    Kernano_Package.kp_main.kernano_menu()
-
-
+    #Kernano_Package.kp_main.kernano_menu()
+    kernano_menu()

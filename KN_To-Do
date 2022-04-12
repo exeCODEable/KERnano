@@ -5,6 +5,20 @@
 
 ############################
 WN DEV BRANCH:
+Date: April/12/2022
++ Removed some files to help clear things.
++ Fixed the "kernano" import error.
++ Fixed the Credits option.
++ Cleaned up the file name in the Text File Selection in Wordlister.
++ PDF Kit has been Error Handled & added to KERnano.
++ Started working on the General Tools package.
+// Running into an odd error with PDF Kit as I'm working on General Tools.
+// the KP_MAIN keep erroring with the "text_extractor" from the PDF Package.
+// Will need to work on that.
+// Commented out the PDF Kit package until I work out those kinks.
+
+############################
+WN DEV BRANCH:
 Date: April/11/2022
 + Added the Wordlister files.
 + Setting up the PyCharm enviroment.

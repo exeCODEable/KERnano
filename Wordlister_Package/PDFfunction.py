@@ -21,6 +21,7 @@ import pdfplumber
 from time import sleep
 import easygui
 import Wordlister_Package.wlp_main
+import os
 
 
 

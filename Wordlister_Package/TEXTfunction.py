@@ -19,6 +19,8 @@ import string
 from time import sleep
 import easygui
 import Wordlister_Package.wlp_main
+import os
+
 
 ''' The Text Input '''
 def text_extractor():
@@ -26,7 +28,9 @@ def text_extractor():
         User Input : The Text file name
         ----------------------'''
     #ui_filename = input("Enter the name of the file without the '.txt': ")
-    ui_filename = easygui.fileopenbox()
+    selection = easygui.fileopenbox()
+    # Cleaning up the file name.
+    ui_filename = os.path.basename(selection)
     print("One moment, reading ", ui_filename)
     sleep(1)
 

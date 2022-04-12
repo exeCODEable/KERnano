@@ -18,15 +18,17 @@
 from time import sleep
 
 # Kernano Package:
+# Credits
+import Kernano_Package.cred_script
 # Error Handling - The Int Checker & The YN Checker
 from Kernano_Package.Error_Handler import the_int_checker, the_yn_checker
-# The Credits file.
-from Kernano_Package.credits import credit_title
+
 
 # PenTest Package:
 #
 
 # PDF Package:
+#import PDF_Kit.pdfk_main
 #
 
 # General Package:
@@ -63,7 +65,7 @@ def kernano_menu():
 //\/\\ain  //\/\enu
 ====================
 [1]: Pen Test Tools ... [HLPR / B64 / URL Checker / Nmap]
-[2]: PDF Tools ... [Text Extractor / Password Decryptor]
+[2]: PDF Kit ... [Text Extractor / Password Remover]
 [3]: General Tools ... [CHMODER / DE-133-ER / Note Maker]
 [4]: Wordlister ... [Create a wordlist from a text or PDF]
 [5]: Credits
@@ -85,7 +87,8 @@ def kernano_menu():
         print("Pen Test Tools Menu Goes Here")
     elif int(user_menu_selection) == 2:
         # PDF Tools Menu
-        print("PDF Tools Menu Goes Here")
+        #PDF_Kit.pdfk_main.pdf_kit_menu()
+        print("PDF KIT GOES HERE")
     elif int(user_menu_selection) == 3:
         # General Tools Menu
         print("General Tools Menu Goes Here")
@@ -94,7 +97,7 @@ def kernano_menu():
         Wordlister_Package.wlp_main.wl_menu()
     elif int(user_menu_selection) == 5:
         # Credits
-        credit_title()
+        Kernano_Package.cred_script.credit_title()
         # If User Input is rejected by the Error Handler
     elif user_menu_selection == -1:
         kernano_menu()

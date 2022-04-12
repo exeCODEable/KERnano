@@ -21,7 +21,7 @@ I would like to give credit to:
 -------------------------------
 -Python: For providing the world and I with this superpower.
 -All the modules and libraries that made this project possible.
--David Bomble: Who's generous code was the catalyst for the "NMap" feature.
+-David Bomble: Who's generous code was the catalyst for the "Port Scanner" feature.
 
 
 

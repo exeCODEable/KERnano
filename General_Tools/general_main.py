@@ -14,73 +14,77 @@
 # www.exeCODEable.com  |  www.AshNoor.me  |  www.KERnano.com            #
 #-----------------------------------------------------------------------#
 
-# The Imports
+# imports
 from time import sleep
 
-# Importing my custom extraction functions.
-from Wordlister_Package.TEXTfunction import text_extractor as tf
-from Wordlister_Package.PDFfunction import pdf_extractor as pf
+# local files
+import chmoder
+#import leet_speak # De-1337-er
+#import nmaker # CTF Note Maker
 
 
 # Kernano Package:
 # Error Handling - The Int Checker
 from Kernano_Package.Error_Handler import the_int_checker
-# The Exit Kernano function
-import Kernano_Package.kp_main
+# The Kernanon Menu & Exit Kernano functions
+from Kernano_Package.kp_main import kernano_menu, exit_kernano
+
+# Importing this
+
 
 # ------------------------------------------------------------
-# Wordlister Menu function.
-def wl_menu():
-    # Title and menu options to the user
-    print("""
-+-+-+-+-+-+-+-+-+-+
-| Wordlister Menu |
-+-+-+-+-+-+-+-+-+-+
+# General Menu Function
+def gen_menu():
+    print(
+"""
++-+-+-+-+-+-+-+-+-+-+
+| General Tools Menu|
++-+-+-+-+-+-+-+-+-+-+
 
-What kind of file are you providing? 
-[1] A Text File. (.txt)
-[2] A PDF File. (.pdf)
-[3] Back to KERnano Menu.
-[4] Exit KERnano.
-""")
+[1] CHMODER. (helps you with CHMOD codes)
+[2] DE-1337-ER. (l33t sp34k to text & vice versa)
+[3] CTF Note Maker.
+[4] Back to KERnano Menu.
+[5] Exit KERnano. """)
+
+    # sleep for a second
+    sleep(1)
 
     # Getting user input
-    ui_wordlister = input("Enter Your Choice: ")
+    ui_gen_menu = int(input("Enter Option: "))
 
     # Send to The Checker for Error Handling
     # Re-assign the User's input with the value returned from The Checker
-    ui_wordlister = the_int_checker(ui_wordlister)
+    ui_gen_menu = the_int_checker(ui_gen_menu)
 
-    # User selected "Text File"
-    if int(ui_wordlister) == 1:
-        # Text File Extraction
-        tf()
-    elif int(ui_wordlister) == 2:
-        # PDF File Extraction
-        pf()
-    elif int(ui_wordlister) == 3:
+    if ui_gen_menu == 1:
+        # CHMODER Menu
+        chmoder.chmod()
+    elif ui_gen_menu == 2:
+        print("deletter goes here")
+    elif ui_gen_menu == 3:
+        print("Note Maker goes here")
+    elif ui_gen_menu == 4:
         # Go back to Kernano's Main Menu
-        Kernano_Package.kp_main.kernano_menu()
-    # If User Input is rejected by the Error Handler
-    elif ui_wordlister == -1:
-        # Go back to the Wordlister Menu
-        wl_menu()
-    # If User Input is rejected by the Error Handler
-    elif ui_wordlister == -2:
-        # Go back to the Wordlister Menu
-        wl_menu()
+        kernano_menu()
+
+        # If User Input is rejected by the Error Handler
+    elif ui_gen_menu == -1:
+        # Go back to the Tool Menu ()
+        gen_menu()
+    elif ui_gen_menu == -2:
+        # Go back to the Tool Menu ()
+        gen_menu()
     else:
         # Exit the program
-        Kernano_Package.kp_main.exit_kernano()
+        exit_kernano()
 
-# End of Wordlister Menu function.
+
+# End of General Menu function.
 # ------------------------------------------------------------
 
 
 
-
-
-
-# Main Guard to call the function.
+# Calling function with Main Guard.
 if __name__ == '__main__':
-    wl_menu()
+    gen_menu()
