@@ -17,17 +17,17 @@
 # imports
 from time import sleep
 
-# local files
-import chmoder
-#import leet_speak # De-1337-er
-#import nmaker # CTF Note Maker
+# Importing local files.
+import General_Tools.chmoder # CHMODER
+import General_Tools.leet_speak # De-1337-er
+import General_Tools.nmaker # CTF Note Maker
 
 
 # Kernano Package:
 # Error Handling - The Int Checker
-from Kernano_Package.Error_Handler import the_int_checker
+import Kernano_Package.Error_Handler
 # The Kernanon Menu & Exit Kernano functions
-from Kernano_Package.kp_main import kernano_menu, exit_kernano
+import Kernano_Package.kp_main
 
 # Importing this
 
@@ -51,22 +51,23 @@ def gen_menu():
     sleep(1)
 
     # Getting user input
-    ui_gen_menu = int(input("Enter Option: "))
+    ui_gen_menu = int(input("\nEnter Option: "))
 
     # Send to The Checker for Error Handling
     # Re-assign the User's input with the value returned from The Checker
-    ui_gen_menu = the_int_checker(ui_gen_menu)
+    ui_gen_menu = Kernano_Package.Error_Handler.the_int_checker(ui_gen_menu)
 
     if ui_gen_menu == 1:
         # CHMODER Menu
-        chmoder.chmod()
+        General_Tools.chmoder.chmod()
     elif ui_gen_menu == 2:
-        print("deletter goes here")
+        # DE-1337-ER Menu
+        General_Tools.leet_speak.leeter_menu()
     elif ui_gen_menu == 3:
-        print("Note Maker goes here")
+        General_Tools.nmaker.note_maker()
     elif ui_gen_menu == 4:
         # Go back to Kernano's Main Menu
-        kernano_menu()
+        Kernano_Package.kp_main.kernano_menu()
 
         # If User Input is rejected by the Error Handler
     elif ui_gen_menu == -1:
@@ -77,7 +78,7 @@ def gen_menu():
         gen_menu()
     else:
         # Exit the program
-        exit_kernano()
+        Kernano_Package.kp_main.exit_kernano()
 
 
 # End of General Menu function.

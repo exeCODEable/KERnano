@@ -2,6 +2,20 @@
 | Branches: Win / Lin |
 ========================
 
+############################
+WN DEV BRANCH:
+Date: April/13/2022
++ Fixed the PDF Kit package.
+  I needed to call all the function using the "Package.file.Function".
+  And I had to do that internally as well.
++ Worked on the General Package:
+    -CHOMDER is completed.
+    -DE-1337-ER is completed.
+    -Note Maker is completed.
++ General Package Tools successfully integreated into the KERnano.
+
+
+
 
 ############################
 WN DEV BRANCH:

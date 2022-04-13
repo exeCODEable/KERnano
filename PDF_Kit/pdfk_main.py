@@ -16,8 +16,10 @@
 
 
 # IMPORTS
-import text_extractor
-import password_remover
+#import text_extractor
+#import password_remover
+import PDF_Kit.text_extractor
+import PDF_Kit.password_remover
 
 
 # Kernano Package:
@@ -51,10 +53,10 @@ def pdf_kit_menu():
 
     if main_menu_selection == 1:
         # Go to Text Extractor
-        text_extractor.pdf_extractor()
+        PDF_Kit.text_extractor.pdf_extractor()
     elif main_menu_selection == 2:
         # Go to Password Remover/Decrypter
-        password_remover.pdf_decrypt()
+        PDF_Kit.password_remover.pdf_decrypt()
     elif main_menu_selection == 3:
         # Go back to Kernano's Main Menu
         Kernano_Package.kp_main.kernano_menu()

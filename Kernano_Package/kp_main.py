@@ -28,10 +28,13 @@ from Kernano_Package.Error_Handler import the_int_checker, the_yn_checker
 #
 
 # PDF Package:
-#import PDF_Kit.pdfk_main
+import PDF_Kit.pdfk_main
+#import PDF_Kit.text_extractor
+#import PDF_Kit.password_remover
 #
 
 # General Package:
+import General_Tools.general_main
 #
 
 # Wordlister Package:
@@ -87,11 +90,10 @@ def kernano_menu():
         print("Pen Test Tools Menu Goes Here")
     elif int(user_menu_selection) == 2:
         # PDF Tools Menu
-        #PDF_Kit.pdfk_main.pdf_kit_menu()
-        print("PDF KIT GOES HERE")
+        PDF_Kit.pdfk_main.pdf_kit_menu()
     elif int(user_menu_selection) == 3:
         # General Tools Menu
-        print("General Tools Menu Goes Here")
+        General_Tools.general_main.gen_menu()
     elif int(user_menu_selection) == 4:
         # Wordlister Menu
         Wordlister_Package.wlp_main.wl_menu()

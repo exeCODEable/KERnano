@@ -20,7 +20,7 @@ import pdfplumber
 from bidi.algorithm import get_display   # python-bidi library
 import easygui
 import os
-import pdfk_main
+import PDF_Kit.pdfk_main
 
 
 
@@ -131,7 +131,7 @@ def again():
         pdf_extractor()
     else:
         # Main Menu
-        pdfk_main.pdf_kit_menu()
+        PDF_Kit.pdfk_main.pdf_kit_menu()
 
 # // End of PDF Extractor function.
 

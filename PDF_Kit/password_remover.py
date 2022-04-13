@@ -20,7 +20,7 @@ import pikepdf
 from time import sleep
 import easygui
 import os
-import pdfk_main
+import PDF_Kit.pdfk_main
 
 def pdf_decrypt():
     print("\nPDF Password Remover"
@@ -50,7 +50,7 @@ def again():
         pdf_decrypt()
     else:
         # Main Menu
-        pdfk_main.pdf_kit_menu()
+        PDF_Kit.pdfk_main.pdf_kit_menu()
 
 
 
