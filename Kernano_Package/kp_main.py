@@ -25,6 +25,7 @@ from Kernano_Package.Error_Handler import the_int_checker, the_yn_checker
 
 
 # PenTest Package:
+import Pentest_Tools.ptt_main
 #
 
 # PDF Package:
@@ -87,7 +88,7 @@ def kernano_menu():
     # Process based on the value assigned by The Checker.
     if int(user_menu_selection) == 1:
         # Pen Test Tools Menu
-        print("Pen Test Tools Menu Goes Here")
+        Pentest_Tools.ptt_main.ptt_menu()
     elif int(user_menu_selection) == 2:
         # PDF Tools Menu
         PDF_Kit.pdfk_main.pdf_kit_menu()
@@ -122,8 +123,8 @@ def mini_menu():
  _ _       _ _    
 //\/\ini  //\/\enu
 ==================
-(1): Main Menu.
-(2): Exit KERnano.
+[1] KERnano Menu.
+[2] Exit KERnano.
 Please select one:  """)
 
     # Send to The Checker for Error Handling
