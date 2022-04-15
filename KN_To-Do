@@ -17,6 +17,16 @@ Date: April/15/2022
 ############################
 LIN DEV BRANCH:
 Date: April/15/2022
++ Pulled and updated the Credits section.
++ Deleted the credits-file.txt from Executables.
++ Created an Ignor_Folder.
++ Moved the credits-file.txt from Kernano_Package to Ignor_Folder.
++ Tested main.py, and 'Credits' worked.
++ Deleted the old ELF files (main.py from dist, KERnano from The_Executables).
++ Created a new ELF file with the updates.
+  KERnano-Linux_v1
+
+//
 + Fixed the EasyGui "global-state" module error:
   I needed to install Tkinter on the host machine.
   sudo apt-get install python3-tk
