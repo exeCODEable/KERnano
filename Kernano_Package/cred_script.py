@@ -34,18 +34,41 @@ def credit_title():
     # Sleep for a couple of seconds.
     sleep(2)
 
+    # The Credits go here.
+    print( """
+=======
+KERnano
+=======
+Developed & Maintained by: Ash Noor (ryn0f1sh).
+www.KERnano.com  | www.AshNoor.com  | www.exeCODEable.com
 
-    # Open the text file.
-    # Read through the file using a For Loop.
-    # Strip the newline '\n' at the end of each line.
-    #close the file
-    with open("credit-file.txt", 'r') as f:
-        for line in f:
-            print(line.strip())
-    f.close()
 
-    # Sleep for a few seconds.
-    sleep(2)
+-------------------------------
+I would like to give thanks to:
+-------------------------------
+-My family, for their love and support.
+-Syntax & Luna, for your encouragement and feedback.
+-Vernson, for inspiring "The URL Checker".
+-Cat, for your support and evangelism, I appreciate you.
+-Project Discovery, for being an inspiration for this project.
+
+
+
+-------------------------------
+I would like to give credit to:
+-------------------------------
+-Python: For providing the world and I with this superpower.
+-All the modules and libraries that made this project possible.
+-David Bomble: Who's generous code was the catalyst for the "Port Scanner" feature.
+
+
+
+-----------------------------------
+A special thank you to my sponsors:
+-----------------------------------
+Thank you all so very much.   
+    """)
+
 
     # Call the Mini Menu
     Kernano_Package.kp_main.mini_menu()

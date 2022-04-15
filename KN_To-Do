@@ -3,6 +3,13 @@
 ========================
 
 ############################
+WIN DEV BRANCH:
+Date: April/15/2022
++ Changed the "Credits" so that it simply prints all that information.
+  That will make the Executable not need ANYTHING at all.
+
+
+############################
 LIN DEV BRANCH:
 Date: April/15/2022
 + Fixed the EasyGui "global-state" module error:
