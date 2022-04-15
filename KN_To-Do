@@ -3,6 +3,27 @@
 ========================
 
 ############################
+LIN DEV BRANCH:
+Date: April/15/2022
++ Fixed the EasyGui "global-state" module error:
+  I needed to install Tkinter on the host machine.
+  sudo apt-get install python3-tk
+  That fixed the issue right away.
++ Created an updated requirements.txt
++ Installed PyInstaller on this environment
++ Created "The_Executables" folder,for easy access to them.
++ Fixed the Main Menu, "Port Scanner" instead of "NMap".
++ Created the KERnano ELF file.
++ Tested the KERnano-Linux_v1 ELF file, and it works.
+
+
+############################
+LIN DEV BRANCH:
+Date: April/14/2022
++ Pulled the repo into my Linux Enviornment
+
+
+############################
 WN DEV BRANCH:
 Date: April/14/2022
 + Created the "requirements.txt" file

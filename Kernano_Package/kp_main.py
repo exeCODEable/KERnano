@@ -54,6 +54,8 @@ def title():
 +-+-+-+-+-+-+-+-+-+-+-+-+-+     
 The No-Install, Python Pen Testing Kit.
 ---------------------------------------
+Version: 1.0
+------------
     """)
 # End of Title function.
 # ------------------------------------------------------------
@@ -68,7 +70,7 @@ def kernano_menu():
  _ _       _ _    
 //\/\\ain  //\/\enu
 ====================
-[1]: Pen Test Tools ... [HLPR / B64 / URL Checker / Nmap]
+[1]: Pen Test Tools ... [HLPR / B64 / URL Checker / Port Scanner]
 [2]: PDF Kit ... [Text Extractor / Password Remover]
 [3]: General Tools ... [CHMODER / DE-133-ER / Note Maker]
 [4]: Wordlister ... [Create a wordlist from a text or PDF]
