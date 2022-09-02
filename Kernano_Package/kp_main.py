@@ -12,6 +12,12 @@
 # Thank you for the support.                                            #
 # Happy Hacking & Code The Planet                                       #
 # www.exeCODEable.com  |  www.AshNoor.me  |  www.KERnano.com            #
+# --//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--#
+# UPDATES: Sep/2/2022                                                   #
+# Ash Noor (ryn0f1sh)                                                   #
+# + Fixed Wordlister, so now it does not error out when used            #
+# + Fixed PDF Text Extractor, so the words aren't reversed              #
+# - URL Checker: it can't find masked URLs                              #
 #-----------------------------------------------------------------------#
 
 # Imports
@@ -54,7 +60,7 @@ def title():
 +-+-+-+-+-+-+-+-+-+-+-+-+-+     
 The No-Install, Python Pen Testing Kit.
 ---------------------------------------
-Version: 1.0
+Version: 1.1
 ------------
     """)
 # End of Title function.

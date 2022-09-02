@@ -63,7 +63,7 @@ The Wordlist Creation
 # -- Creating the Text File
 def theTextFile (ui_PDFFileName):
     # -- Open and Read the file.
-    TheFile = open('PDFextracted.txt', 'r')
+    TheFile = open('PDFextracted.txt', 'r', encoding='utf-8')
     # -- Extracting the text into a variable.
     text = TheFile.read()
     TheFile.close()

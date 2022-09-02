@@ -64,7 +64,7 @@ def text_extractor():
 
 
     #-- Creating the Text File
-    with open(ui_filename+"_Wordlist.txt", 'a') as f:
+    with open(ui_filename+"_Wordlist.txt", 'a', encoding='utf-8') as f:
         for x in wl:
             if x.isalpha():
                 print(x, file=f)

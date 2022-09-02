@@ -17,7 +17,7 @@
 # IMPORTS
 from time import sleep
 import pdfplumber
-from bidi.algorithm import get_display   # python-bidi library
+#from bidi.algorithm import get_display   # python-bidi library
 import easygui
 import os
 import PDF_Kit.pdfk_main
@@ -51,10 +51,10 @@ def pdf2():
             text = page[i].extract_text()
 
             # To correct the text direction
-            text_direction = get_display(text)
+            #text_direction = get_display(text)
 
             # The header on top of each page + the extracted text
-            extracted =(f'-- PAGE: {i + 1} -- \n {text_direction} \n\n')
+            extracted =(f'-- PAGE: {i + 1} -- \n {text} \n\n')
 
             # To Open, Write & close a text file
             with open(ui_PDFFileName +"_PDFextracted.txt", "a", encoding="utf-8") as text_file:
@@ -106,7 +106,7 @@ def pdf_extractor():
         for i, pg in enumerate(page):
             text = page[i].extract_text()
             #-- To Reverse the Characters Left to right
-            text = text[::-1]
+            #text = text[::-1]
             extracted =(f'-- PAGE: {i + 1} -- \n {text} \n\n')
             #print(extracted)
             # Write to a text file & close text file
